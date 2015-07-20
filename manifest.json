@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "GitHub Pulls",
+  "description": "This extension shows all the open pull requests on your Github account",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/Octocat.png",
+    "default_popup": "popup.html",
+    "default_title": "Show me all my pull requests"
+  },
+
+  "background": {
+    "scripts": ["lib/github.js",
+                "lib/background.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
